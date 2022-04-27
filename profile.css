@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    background-image: linear-gradient(to right,rgba(55,150,200,0.7),rgba(200,55,150,0.8));
+}
+.headers{
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 0;
+    background-image: linear-gradient(to left,chartreuse,rgba(40,100,150,0.5));
+}
+#footer{
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(127,255,00,0.5);
+
+}
+.lastDiv{
+    margin-bottom: 70px;
+}
+.headers a:hover{
+    background-color: blueviolet;
+    box-shadow: 1px 1px 2px blue;
+}
+.headers a{  
+    padding: 3px;
+    text-decoration: none;
+    cursor: pointer;
+    height: 100%;
+}
+.headers a:first-child:hover{
+    background-color: black;
+    box-shadow: 2px 4px 8px rgba(0,0,0,0.7);
+}
+.links{
+    display: none;
+    background-color: white;
+    position: absolute;
+    Z-index: 1;
+}
+.headers a:first-child:hover.links{
+    display: block;
+}
+.links a:hover{
+    background-color: rgba(0,255,10,0.5);
+    box-shadow: 2px 4px 8px rgba(0,0,255,0.7);
+}
+.concepts a{
+    width: 100%;
+    padding: 5px;
+    border-radius: 25px;
+    background-color: #8a2be2;
+    opacity: 0.8;
+    box-shadow: 2px,3px,10px black;
+}
+.concepts li{
+    margin: 20px;
+    border-radius: 20px;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 8px, 10px, 16px, rgba(0,255,10,0.5);
+    background-color: whitesmoke;
+}
+h2{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+nav{
+    list-style-type: none;
+}

@@ -1,0 +1,140 @@
+
+/*Notice that the a:link is inappropriate
+here because an a:link refers
+to the current active link
+alone, i.e the home link in
+this case. 
+Thats why here we have used the a reference directly.*/
+a{
+    color: Yellow;
+} 
+a:first-child{
+    justify-self: flex-start;
+}
+
+/*This is the flex display css configuration*/
+nav.flex-container{
+    padding: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    background-color: royalblue;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+}
+nav.flex-container > nav.flex-container{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 1px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*used to align flex elements vertically, the best tool to use to
+    align the items either at the end or at the bottom */
+    align-items: flex-end;
+}   
+nav.flex-container > nav.flex-container > li{
+    margin-bottom: 10px;
+    margin-right: 50px;
+    
+}
+body{
+    /*trick to allow remove the spaces around the flex container is
+    using the body by removing the margins. */
+    margin-left: 0%;
+    margin-top: 0%;
+    margin-right: 0%;
+    /*the gradient part */
+    background-image: linear-gradient(to right, blue,rgb(150,80,200,0.5));
+    background-color: royalblue;
+}
+
+nav.flex-container >div.flex-container2{
+    display: flex;
+    background-color: royalblue;
+    background-image: linear-gradient(to left, white, rgb(230,130,200,0.4));
+    flex-direction: column;
+}
+
+/*Lets jump over to the next part of the css */
+
+/*for all h1 tags*/
+h1{
+    text-align: center;
+    border: burlywood;
+    padding: 30px;
+    margin-top: 0;
+    background-color: rgb(0,0,255,1);
+    color: chartreuse;
+    /*when using the sticky position you must specify the point at which
+    it will be sticky e.g in this case its at the 0px from the top */
+    position: sticky;
+    top: 0;
+}
+/*Paragraph paddings and margins*/
+p{
+    padding-left: 50px;
+    padding-bottom: 5px;
+    word-spacing: 5px;
+    font-family: serif;
+    font-weight: 900;
+    font-size: large;
+    margin-bottom: 1px;
+}
+
+/*footer id styles. */
+#footer{
+    position: fixed;
+    margin-top: 50px;
+    background-color: rgba(0,0,255,0.5);
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*Images styling */
+img{
+    /*setting the max-width to 100% is actually
+    the in thing.*/
+    max-width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+}
+/*This was for at least enabling emphasizing the last paragraph in the
+Intro page. */
+div.flex-container2 > div:last-child > p{
+    background-image: linear-gradient(to right,rgba(100,255,180,0.7),rgba(180,100,255));
+    margin-bottom: 120px;
+    padding-bottom: 0;
+    text-align: center;
+}
+/*This is the h2 attributes declaration */
+h2{
+    background-image: linear-gradient(to left,lawngreen,rgba(250,180,180,0.5));
+    text-align: center;
+    color:darkmagenta;
+}
+div.flex-container2 > div:first-child{
+    margin-bottom: 0px;
+}
+div.flex-container2 > div:nth-child(2){
+    margin-top: 0px;
+}
+a:hover{
+    
+    background-color: blueviolet;
+    box-shadow: 1px 1px 2px blue;
+}
+a{  
+    padding: 3px;
+    text-decoration: none;
+    cursor: pointer;
+    height: 100%;
+}
